@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# until loop
+
+number=0
+until [ $number -eq 10 ]
+do
+	echo "Best School $number"
+	number=$((number + 1))
+done
