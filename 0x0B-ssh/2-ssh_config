@@ -1,0 +1,5 @@
+Host web-01
+	Hostname 18.232.185.52
+	User ubuntu
+	PasswordAuthentication no
+	IdentityFile ~/.ssh/school
