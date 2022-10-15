@@ -7,13 +7,13 @@ sudo apt-get install nginx -y
 # sudo ufw allow 'Nginx HTTP'
 
 # ownership stuff
-# sudo chown -R "$USER":"$USER" /var/www/html
-# sudo chmod -R 755 /var/www
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chmod -R 755 /var/www
 
 # === hello world content ===
-# sudo echo "Hello World!" > /var/www/html/index.nginx-debian.html
-sudo mv /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html-backup
 sudo echo "Hello World!" > /var/www/html/index.nginx-debian.html
+# sudo mv /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html-backup
+# sudo echo "Hello World!" > /var/www/html/index.nginx-debian.html
 
 sudo nginx -s reload
 
